@@ -3,7 +3,9 @@
     <div class="row">
       <div class="col-sm-12">
         <nav-header @pageWasChanged="currentPage = $event"></nav-header>
-        <component v-bind:is="currentPage"></component>
+        <keep-alive>
+          <component v-bind:is="currentPage"></component>
+        </keep-alive>
       </div>
     </div>
   </div>
