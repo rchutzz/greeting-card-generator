@@ -3,7 +3,7 @@
         <div class="col-sm-6 card edit-area">
 
         </div>
-        <div class="col-sm-6 card caard-display">
+        <div class="col-sm-6 card card-display">
             
         </div>
     </div>
