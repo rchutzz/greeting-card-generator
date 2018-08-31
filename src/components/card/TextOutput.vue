@@ -6,7 +6,10 @@
 
 <script>
     export default {
-        props: ['displayText']
+        props: {
+            'displayText': [String],
+            'containerHeight': [Number]
+        }
     }
 </script>
 
