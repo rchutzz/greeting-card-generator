@@ -8,7 +8,10 @@
     export default {
         props: {
             'displayText': [String],
-            'containerHeight': [Number]
+            'containerHeight': {
+                type: Number,
+                default: 200
+            }
         }
     }
 </script>
