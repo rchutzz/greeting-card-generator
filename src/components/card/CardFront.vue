@@ -7,8 +7,8 @@
             <cc-text-input @displayTextChanged="textBoxValue3 = $event"></cc-text-input>
         </div>
         <div class="col-sm-6 card card-display">
-            {{ imageName }}
             <cc-text-output :displayText="textBoxValue1" :containerHeight="130"></cc-text-output>
+            <cc-image-output :displayImage="imageName" :containerHeight="350"></cc-image-output>
             <cc-text-output :displayText="textBoxValue2" :containerHeight="130"></cc-text-output>
             <cc-text-output :displayText="textBoxValue3" :containerHeight="130"></cc-text-output>
         </div>
@@ -19,6 +19,7 @@
 import TextInput from './TextInput.vue'
 import TextOutput from './TextOutput.vue'
 import ImageUpload from './ImageUpload.vue'
+import ImageOutput from './ImageOutput.vue'
 
 export default {
     data: function() {
@@ -32,7 +33,8 @@ export default {
     components: {
         ccTextInput: TextInput,
         ccTextOutput: TextOutput,
-        ccImageUpload: ImageUpload
+        ccImageUpload: ImageUpload,
+        ccImageOutput: ImageOutput
     }
 }
 </script>
