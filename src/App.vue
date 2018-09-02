@@ -22,6 +22,7 @@
 </template>
 
 <script>
+import FirebaseConfig from './config/firebaseConfig.js'
 import Header from './components/Header.vue'
 import CardFront from './components/card/CardFront.vue'
 import CardInsideLeft from './components/card/CardInsideLeft.vue'
