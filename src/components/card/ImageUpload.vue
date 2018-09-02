@@ -38,7 +38,7 @@ import Firebase from 'firebase'
   }
 </script>
 
-<style>
+<style scoped>
   img {
     max-width: 200px;
   }
