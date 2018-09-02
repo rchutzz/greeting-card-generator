@@ -1,5 +1,5 @@
 <template>
-  <div class="img-container">
+  <div class="img-container" :style="styleObject">
     <img id="outputImage"> {{ displayImage }}
   </div>
 </template>
@@ -13,6 +13,13 @@
       containerHeight: {
         type: Number,
         default: 200
+      }
+    },
+    computed: {
+      styleObject: function() {
+        return {
+          height: this.containerHeight + 'px'
+        }
       }
     }
   }
