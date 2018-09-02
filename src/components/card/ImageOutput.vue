@@ -1,5 +1,7 @@
 <template>
-  <div class="img-container" :style="styleObject">
+  <div class="img-container" :style="styleObject" @mouseover="showOptions = true" @mouseleave="showOptions = false">
+
+    <button type="button" class="btn btn-outline-danger btn-sm" v-show="showOptions">Remove Image</button>
     <img id="outputImage">
   </div>
 </template>
@@ -15,6 +17,11 @@ import Firebase from 'firebase'
       containerHeight: {
         type: Number,
         default: 200
+      }
+    },
+    data: function() {
+      return {
+        showOptions: false
       }
     },
     watch: {
@@ -41,6 +48,10 @@ import Firebase from 'firebase'
     border: 1px dotted grey;
     overflow: hidden;
     margin: 5px 0;
-    /* max-width: 100%; */
+  }
+
+  button {
+    position: absolute;
+    z-index: 1;
   }
 </style>
