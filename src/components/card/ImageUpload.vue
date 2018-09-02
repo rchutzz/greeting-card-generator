@@ -8,7 +8,7 @@
       <progress value="0" max="100" id="progress"></progress>
       <br>
       <img id="image">
-      <button type="button" id="setImageButton">Set Image</button>
+      <button type="button" id="setImageButton" style="display:none" @click="setImage">Set Image</button>
     </div>
   </div>
 </template>
@@ -40,8 +40,13 @@ import Firebase from 'firebase'
         upload.on('state_changed', function(snapshot) {
           var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
           document.getElementById('progress').value = progress;
-        })
 
+          if (progress === 100) {
+            document.getElementById('setImageButton').style.display = 'inline-block';
+          }
+        })
+      },
+      setImage: function() {
         this.$emit('displayImageChanged', this.file.name);
       }
     }
