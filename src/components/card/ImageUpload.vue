@@ -44,6 +44,7 @@ import Firebase from 'firebase'
           var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
           document.getElementById('progress').value = progress;
 
+          // once we successfully uploaded our picture, we change our set image button display property to 'inline-block' to make it visible
           if (progress === 100) {
             document.getElementById('setImageButton').style.display = 'inline-block';
           }

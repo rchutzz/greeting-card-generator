@@ -1,6 +1,6 @@
 <template>
   <div class="img-container" :style="styleObject">
-    <img id="outputImage"> {{ displayImage }}
+    <img id="outputImage">
   </div>
 </template>
 
@@ -41,5 +41,6 @@ import Firebase from 'firebase'
     border: 1px dotted grey;
     overflow: hidden;
     margin: 5px 0;
+    /* max-width: 100%; */
   }
 </style>
