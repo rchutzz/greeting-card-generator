@@ -24,6 +24,9 @@ import Firebase from 'firebase'
     },
     methods: {
       uploadFile: function(event) {
+
+        document.getElementById('setImageButton').style.display = 'none';
+        
         this.file = event.target.files[0];
         let storageRef = Firebase.storage().ref('user_uploads/' + this.file.name);
         var upload = storageRef.put(this.file);
