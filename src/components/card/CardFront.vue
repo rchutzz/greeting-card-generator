@@ -8,7 +8,7 @@
         </div>
         <div class="col-sm-6 card card-display">
             <cc-text-output :displayText="textBoxValue1" :containerHeight="150"></cc-text-output>
-            <cc-image-output :displayImage="imageName" :containerHeight="350"></cc-image-output>
+            <cc-image-output :displayImage="imageName" :containerHeight="350" :clearImageProp="clearImage"></cc-image-output>
             <cc-text-output :displayText="textBoxValue2" :containerHeight="150"></cc-text-output>
             <cc-text-output :displayText="textBoxValue3" :containerHeight="150"></cc-text-output>
         </div>
@@ -28,6 +28,13 @@ export default {
             textBoxValue2: '',
             textBoxValue3: '',
             imageName: ''
+        }
+    },
+    methods: {
+        clearImage: function() {
+            if (this.imageName !== '') {
+                this.imageName = 'beach.jpeg'
+            }
         }
     },
     components: {
