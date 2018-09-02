@@ -41,6 +41,8 @@ import Firebase from 'firebase'
           var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
           document.getElementById('progress').value = progress;
         })
+
+        this.$emit('displayImageChanged', this.file.name);
       }
     }
   }
