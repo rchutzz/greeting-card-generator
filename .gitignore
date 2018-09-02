@@ -10,3 +10,6 @@ yarn-error.log
 *.ntvs*
 *.njsproj
 *.sln
+
+# Firebase API key
+src/config/firebaseConfig.js
