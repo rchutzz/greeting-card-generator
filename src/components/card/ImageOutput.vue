@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import Firebase from 'firebase'
+
   export default {
     props: {
       displayImage: {
@@ -13,6 +15,15 @@
       containerHeight: {
         type: Number,
         default: 200
+      }
+    },
+    watch: {
+      displayImage: function() {
+        let storageRef = Firebase.storage().ref('user_uploads/' + this.displayImage);
+        storageRef.getDownloadURL().then(function(url) {
+          var img = document.getElementById('outputImage');
+          img.src = url;
+        })
       }
     },
     computed: {
