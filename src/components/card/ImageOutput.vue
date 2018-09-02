@@ -31,6 +31,7 @@ import Firebase from 'firebase'
         storageRef.getDownloadURL().then(function(url) {
           var img = document.getElementById('outputImage');
           img.src = url;
+          setDraggable();
         })
       }
     },
@@ -42,6 +43,11 @@ import Firebase from 'firebase'
       }
     }
   }
+
+
+function setDraggable() {
+  $('#outputImage').draggable();
+}
 </script>
 
 <style>
@@ -54,5 +60,9 @@ import Firebase from 'firebase'
   button {
     position: absolute;
     z-index: 1;
+  }
+
+  img {
+    width: 130%;
   }
 </style>
