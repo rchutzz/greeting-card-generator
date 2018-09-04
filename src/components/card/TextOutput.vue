@@ -54,7 +54,7 @@
                 showOptions: false,
                 setFontSize: '',
                 setTextAlign: '',
-                setItalic: true,
+                setItalic: false,
                 setBold: false
             }
         },
