@@ -2,6 +2,7 @@
     <div class="row">
         <div class="col-sm-6 card edit-area">
             <cc-image-upload @displayImageChanged="imageName = $event"></cc-image-upload><hr>
+            <cc-section-completed></cc-section-completed>
         </div>
         <div class="col-sm-6 card card-display">
             <cc-image-output :displayImage="imageName" :containerHeight="400" :clearImageProp="clearImage"></cc-image-output>
@@ -12,6 +13,8 @@
 <script>
 import ImageUpload from './ImageUpload.vue'
 import ImageOutput from './ImageOutput.vue'
+import SectionCompleted from './SectionCompleted.vue'
+
 
 export default {
     data: function() {
@@ -28,7 +31,8 @@ export default {
     },
     components: {
         ccImageUpload: ImageUpload,
-        ccImageOutput: ImageOutput
+        ccImageOutput: ImageOutput,
+        ccSectionCompleted: SectionCompleted
     }
 }
 </script>
