@@ -13,23 +13,23 @@
 </template>
 
 <script>
-import CardProgress from './card/CardProgress.vue'
+    import CardProgress from './card/CardProgress.vue'
 
- export default {
-     data: function() {
-         return {
-             pageSelected: ''
-         }
-     },
-     watch: {
-         pageSelected: function() {
-             this.$emit('pageWasChanged', this.pageSelected)
-         }
-     },
-     components: {
-         ccCardProgress: CardProgress
-     }
- }
+    export default {
+        data: function() {
+            return {
+                pageSelected: ''
+            }
+        },
+        watch: {
+            pageSelected: function() {
+                this.$emit('pageWasChanged', this.pageSelected)
+            }
+        },
+        components: {
+            ccCardProgress: CardProgress
+        }
+    }
 </script>
 
 <style>
