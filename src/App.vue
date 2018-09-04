@@ -57,4 +57,12 @@ export default {
   a {
     cursor: pointer
   }
+
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+  }
+
+  .fade-enter-active, .fade-leave.active {
+      transition: opacity .5s;
+  }
 </style>
