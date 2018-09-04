@@ -14,7 +14,9 @@
             </div>
           </div>
         </div>
-        <transition name="fade" 
+        <transition appear
+                    appear-active-class="custom-appaer-active-class"
+                    name="fade" 
                     mode="out-in"
                     @enter="enter">
           <keep-alive>
@@ -85,6 +87,10 @@ export default {
 
   .fade-enter-active {
       transition: opacity .5s;
+  }
+
+  .custom-appaer-active-class {
+    transition: opacity 1s;
   }
 
   .fade-leave-active {
