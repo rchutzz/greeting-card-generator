@@ -22,21 +22,16 @@ import TextOutput from './TextOutput.vue'
 import ImageUpload from './ImageUpload.vue'
 import ImageOutput from './ImageOutput.vue'
 import SectionCompleted from './SectionCompleted.vue'
+import { clearImageMixin } from '../../clearImageMixin'
 
 export default {
+    mixins: [clearImageMixin],
     data: function() {
         return {
             textBoxValue1: '',
             textBoxValue2: '',
             textBoxValue3: '',
             imageName: ''
-        }
-    },
-    methods: {
-        clearImage: function() {
-            if (this.imageName !== '') {
-                this.imageName = 'beach.jpeg'
-            }
         }
     },
     components: {

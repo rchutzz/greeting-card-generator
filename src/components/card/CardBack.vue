@@ -14,6 +14,7 @@
 import ImageUpload from './ImageUpload.vue'
 import ImageOutput from './ImageOutput.vue'
 import SectionCompleted from './SectionCompleted.vue'
+import { clearImageMixin } from '../../clearImageMixin'
 
 
 export default {
