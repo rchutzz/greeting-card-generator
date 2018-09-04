@@ -11,31 +11,31 @@
 </template>
 
 <script>
-import ImageUpload from './ImageUpload.vue'
-import ImageOutput from './ImageOutput.vue'
-import SectionCompleted from './SectionCompleted.vue'
-import { clearImageMixin } from '../../clearImageMixin'
+    import ImageUpload from './ImageUpload.vue'
+    import ImageOutput from './ImageOutput.vue'
+    import SectionCompleted from './SectionCompleted.vue'
+    import { clearImageMixin } from '../../clearImageMixin'
 
-
-export default {
-    data: function() {
-        return {
-            imageName: ''
-        }
-    },
-    methods: {
-        clearImage: function() {
-            if (this.imageName !== '') {
-                this.imageName = 'beach.jpeg'
+    export default {
+        mixins: [clearImageMixin],
+        data: function() {
+            return {
+                imageName: ''
             }
+        },
+        methods: {
+            clearImage: function() {
+                if (this.imageName !== '') {
+                    this.imageName = 'beach.jpeg'
+                }
+            }
+        },
+        components: {
+            ccImageUpload: ImageUpload,
+            ccImageOutput: ImageOutput,
+            ccSectionCompleted: SectionCompleted
         }
-    },
-    components: {
-        ccImageUpload: ImageUpload,
-        ccImageOutput: ImageOutput,
-        ccSectionCompleted: SectionCompleted
     }
-}
 </script>
 
 <style>

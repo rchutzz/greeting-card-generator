@@ -8,21 +8,21 @@
 </template>
 
 <script>
-import { EventBus } from '../../main.js'
+    import { EventBus } from '../../main.js'
 
-export default {
-    created: function() {
-        EventBus.$on('mark-as-completed', function(data) {
-            if (!data) {
-                document.getElementById('counter').innerText++;
-                document.getElementById('cardProgress').value+=25;
-            } else {
-                document.getElementById('counter').innerText--;
-                document.getElementById('cardProgress').value-=25;
-            }
-        })
+    export default {
+        created: function() {
+            EventBus.$on('mark-as-completed', function(data) {
+                if (!data) {
+                    document.getElementById('counter').innerText++;
+                    document.getElementById('cardProgress').value+=25;
+                } else {
+                    document.getElementById('counter').innerText--;
+                    document.getElementById('cardProgress').value-=25;
+                }
+            })
+        }
     }
-}
 </script>
 
 <style scoped>

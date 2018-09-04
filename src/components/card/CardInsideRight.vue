@@ -15,24 +15,24 @@
 </template>
 
 <script>
-import TextInput from './TextInput.vue'
-import TextOutput from './TextOutput.vue'
-import SectionCompleted from './SectionCompleted.vue'
+    import TextInput from './TextInput.vue'
+    import TextOutput from './TextOutput.vue'
+    import SectionCompleted from './SectionCompleted.vue'
 
-export default {
-    data: function() {
-        return {
-            textBoxValue1: '',
-            textBoxValue2: '',
-            textBoxValue3: ''
+    export default {
+        data: function() {
+            return {
+                textBoxValue1: '',
+                textBoxValue2: '',
+                textBoxValue3: ''
+            }
+        },
+        components: {
+            ccTextInput: TextInput,
+            ccTextOutput: TextOutput,
+            ccSectionCompleted: SectionCompleted
         }
-    },
-    components: {
-        ccTextInput: TextInput,
-        ccTextOutput: TextOutput,
-        ccSectionCompleted: SectionCompleted
     }
-}
 </script>
 
 <style>

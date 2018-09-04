@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Firebase from 'firebase'
+  import Firebase from 'firebase'
 
   export default {
     data: function() {
