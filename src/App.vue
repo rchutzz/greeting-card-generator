@@ -54,9 +54,8 @@ export default {
     }
   },
   methods: {
-    enter: function(el, document) {
+    enter: function(el) {
       document.getElementById('instruction').style.display = "none";
-      done();
     }
   },
   components: {
@@ -84,7 +83,29 @@ export default {
     opacity: 0;
   }
 
-  .fade-enter-active, .fade-leave.active {
+  .fade-enter-active {
       transition: opacity .5s;
+  }
+
+  .fade-leave-active {
+    transition: opacity .5s;
+  }
+
+  .scale-enter-active {
+    animation: scale-in 0.5s;
+  }
+
+  .scale-leave-active {
+    animation: scale-out 0.5s;
+  }
+
+  @keyframes scale-in {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+  }
+
+  @keyframes scale-out {
+    0% { transform: scale(1); }
+    100% { transform: scale(0); }
   }
 </style>
