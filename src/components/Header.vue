@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 class="text-center">Creative Cards</h1>
+        <h1 class="text-center">Greeting Card Generator</h1>
         <ul class="nav justify-content-center">
             <li class="nav-item"><a class="nav-link" @click="pageSelected='cardFront'">Front</a></li>
             <li class="nav-item"><a class="nav-link" @click="pageSelected='cardInsideLeft'">Inside Left</a></li>
