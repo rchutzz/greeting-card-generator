@@ -7,8 +7,15 @@ App built with Vue.js, Javascript, HTML, CSS, and Google Firebase for storing im
 ## Build Setup
 
 ``` bash
-# install dependencies
+# Install dependencies
 npm install
+
+# Create firebaseConfig.js
+cd './src/config'
+cp firebaseConfigExample.js ./firebaseConfig.js
+
+# Replace apiKey: "YOUR_API_KEY" in firebaseConfig.js with your Google Firebase API key for via your web apps
+open firebaseConfig.js
 
 # serve with hot reload at localhost:8080
 npm run dev
