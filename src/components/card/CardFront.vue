@@ -5,6 +5,7 @@
             <cc-image-upload @displayImageChanged="imageName = $event"></cc-image-upload><hr>
             <cc-text-input @displayTextChanged="textBoxValue2 = $event"></cc-text-input>
             <cc-text-input @displayTextChanged="textBoxValue3 = $event"></cc-text-input>
+            <cc-section-completed></cc-section-completed>
         </div>
         <div class="col-sm-6 card card-display">
             <cc-text-output :displayText="textBoxValue1" :containerHeight="150"></cc-text-output>
@@ -20,6 +21,7 @@ import TextInput from './TextInput.vue'
 import TextOutput from './TextOutput.vue'
 import ImageUpload from './ImageUpload.vue'
 import ImageOutput from './ImageOutput.vue'
+import SectionCompleted from './SectionCompleted.vue'
 
 export default {
     data: function() {
@@ -41,7 +43,8 @@ export default {
         ccTextInput: TextInput,
         ccTextOutput: TextOutput,
         ccImageUpload: ImageUpload,
-        ccImageOutput: ImageOutput
+        ccImageOutput: ImageOutput,
+        ccSectionCompleted: SectionCompleted
     }
 }
 </script>
