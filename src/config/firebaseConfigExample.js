@@ -1,3 +1,5 @@
+import Firebase from 'firebase'
+
 var config = {
   apiKey: "YOUR_API_KEY",
   authDomain: "creative-cards-app-bb48a.firebaseapp.com",
@@ -6,4 +8,4 @@ var config = {
   storageBucket: "creative-cards-app-bb48a.appspot.com",
   messagingSenderId: "114027640873"
 };
-firebase.initializeApp(config);
+Firebase.initializeApp(config);
