@@ -27,4 +27,5 @@ npm run build
 
 ![alt text](images/FrontCard.png)
 ![alt text](images/InsideLeft.png)
-![alt text](images/backCard.png)
+![alt text](images/InsideRight.png)
+![alt text](images/BackCard.png)
