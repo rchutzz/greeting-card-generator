@@ -99,7 +99,8 @@
         margin-top: 5px;
         margin-bottom: 5px;
         padding-bottom: 1px;
-        width: 90%;
+        width: 93%;
+        background: rgba(204, 204, 204, 0.99);
     }
 
     select {
