@@ -23,3 +23,8 @@ npm run dev
 # build for production with minification
 npm run build
 ```
+# Images
+
+![alt text](images/FrontCard.png)
+![alt text](images/InsideLeft.png)
+![alt text](images/backCard.png)
