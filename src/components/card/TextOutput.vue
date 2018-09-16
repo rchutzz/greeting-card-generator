@@ -90,16 +90,16 @@
     }
 
     .italic {
-        font-weight: italic;
+        font-style: italic;
     }
 
     form {
-        position: absolute;
+        /* position: absolute; */
         border-bottom: 1px dotted grey;
         margin-top: 5px;
         margin-bottom: 5px;
         padding-bottom: 1px;
-        width: 93%;
+        width: 100%;
         background: rgba(204, 204, 204, 0.99);
     }
 
