@@ -4,6 +4,10 @@
 
 App built with Vue.js, Javascript, HTML, CSS, and Google Firebase for storing images.
 
+This app has been deployed to heroku: https://greeting-card-generator.herokuapp.com/
+
+Contact me if you would like to see a demo since the heroku plan will deactivate the URL if it does not get pinged often enough.
+
 ## Build Setup
 
 ``` bash
