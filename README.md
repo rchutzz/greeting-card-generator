@@ -1,6 +1,6 @@
 # Greeting Card Generator
 
-> A Vue.js app that generates a custom made greeting card for whatever special occassion. Birthday, Valentines, Christmas, Anniversay, whatever! 
+> A front-end heavy Vue.js app that generates a custom made greeting card for whatever special occasion. Birthday, Valentines, Christmas, Anniversay, whatever! 
 
 App built with Vue.js, Javascript, HTML, CSS, and Google Firebase for storing images.
 
