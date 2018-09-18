@@ -9,7 +9,7 @@ This app has been deployed to heroku: https://greeting-card-generator.herokuapp.
 ## Build Setup
 
 ``` bash
-# Install dependencies
+# Install dependencies from root directory
 npm install
 
 # Create firebaseConfig.js
@@ -19,10 +19,10 @@ cp firebaseConfigExample.js ./firebaseConfig.js
 # Replace apiKey: "YOUR_API_KEY" in firebaseConfig.js with your Google Firebase API key for via your web apps
 open firebaseConfig.js
 
-# build dist folder & build.js for server production
+# Go back to root directory to build dist folder & build.js for server production
 npm run build
 
-# launches express server and serves app at http://localhost:5000/
+# Launches express server and serves app at http://localhost:5000/
 npm run start
 ```
 # Images
