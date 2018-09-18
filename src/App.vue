@@ -7,7 +7,7 @@
         <div id="instruction" class="text-center italic">
           <div class="row">
             <div class="col-sm-6">
-              <p><em>&larr; Make changes in the edit card area below</em></p>
+              <p><em>&#8595; Make changes in the edit card area below</em></p>
             </div>
             <div class="col-sm-6">
               <p><em>And they will show on the card! &#x21B4;</em></p>
@@ -76,10 +76,11 @@ export default {
 <style>
   body {
     font-family: 'Passion One', cursive;
-    color: white;
-    background-image: url('https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b2b3eeca79a80926667ec71b01eac12&auto=format&fit=crop&w=1950&q=80');
-    width: 100%;
-    height: auto;
+    color: black;
+    background-image: url('https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?ixlib=rb-0.3.5&s=69f63bf219eac4162a5cfdfb5a94f856&auto=format&fit=crop&w=1950&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 19px;
   }
 
   .cardCC {
