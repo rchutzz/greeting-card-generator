@@ -57,6 +57,6 @@ export default {
     }
 
     #leftColor {
-        background: #57ba98;
+        background: #65CCB8;
     }
 </style>
