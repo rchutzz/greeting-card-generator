@@ -10,7 +10,7 @@
               <p><em>&#8595; Make changes in the edit card area below</em></p>
             </div>
             <div class="col-sm-6">
-              <p><em>And they will show on the card! &#x21B4;</em></p>
+              <p><em>Select font size/ styling by hovering over &#x21B4;</em></p>
             </div>
           </div>
         </div>
@@ -28,13 +28,6 @@
 
         <cc-footer>
           <p class="text-center" slot="app-name">&copy; {{ appName }}</p>
-          <nav>
-            <ul class="nav justify-content-center">
-              <li class="nav-item"><a class="nav-link">Home</a></li>
-              <li class="nav-item"><a class="nav-link">About Us</a></li>
-              <li class="nav-item"><a class="nav-link">Contact Us</a></li>
-            </ul>
-          </nav>
         </cc-footer>
       </div>
     </div>
@@ -54,7 +47,7 @@ export default {
   data: function() {
     return {
       currentPage: 'cardFront',
-      appName: 'Creative Cards'
+      appName: 'Richard Hai'
     }
   },
   methods: {
@@ -80,7 +73,7 @@ export default {
     background-image: url('https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?ixlib=rb-0.3.5&s=69f63bf219eac4162a5cfdfb5a94f856&auto=format&fit=crop&w=1950&q=80');
     background-repeat: no-repeat;
     background-size: cover;
-    font-size: 19px;
+    font-size: 21px;
   }
 
   .cardCC {
