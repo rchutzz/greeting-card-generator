@@ -73,7 +73,7 @@ export default {
 
 <style>
   body {
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: 'Passion One', cursive;
     color: #333;
   }
 
