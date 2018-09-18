@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-        <div class="col-sm-6 card edit-area">
+        <div class="col-sm-6 card edit-area" id="leftColor">
             <cc-text-input @displayTextChanged="textBoxValue1 = $event"></cc-text-input>
             <cc-image-upload @displayImageChanged="imageName = $event"></cc-image-upload><hr>
             <cc-text-input @displayTextChanged="textBoxValue2 = $event"></cc-text-input>
@@ -54,5 +54,9 @@ export default {
     .card-display {
         height: 800px;
         padding: 20px;
+    }
+
+    #leftColor {
+        background: #57ba98;
     }
 </style>

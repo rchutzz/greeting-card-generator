@@ -76,7 +76,7 @@ export default {
 <style>
   body {
     font-family: 'Passion One', cursive;
-    color: black;
+    color: #000000;
     background-image: url('https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?ixlib=rb-0.3.5&s=69f63bf219eac4162a5cfdfb5a94f856&auto=format&fit=crop&w=1950&q=80');
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-        <div class="col-sm-6 card edit-area">
+        <div class="col-sm-6 card edit-area" id="leftColor">
             <cc-image-upload @displayImageChanged="imageName = $event"></cc-image-upload><hr>
             <cc-section-completed></cc-section-completed>
         </div>
