@@ -68,22 +68,23 @@
   img {
     max-width: 200px;
   }
-    progress {
-        width: 50%;
-        background: green;
-    }
-    progress[value]::-webkit-progress-value {
-        background-image: -webkit-linear-gradient(-45deg,
-        transparent 33%, rgba(0, 0, 0, .1) 33%,
-        rgba(0, 0, 0, .1) 66%, transparent 66%),
-        -webkit-linear-gradient(top,
-        rgba(255, 255, 255, .25),
-        rgba(0, 0, 0, .25)),
-        -webkit-linear-gradient(left, rgb(204, 184, 0), rgb(84, 255, 68));
+  
+  progress {
+      width: 50%;
+      background: green;
+  }
+  progress[value]::-webkit-progress-value {
+      background-image: -webkit-linear-gradient(-45deg,
+      transparent 33%, rgba(0, 0, 0, .1) 33%,
+      rgba(0, 0, 0, .1) 66%, transparent 66%),
+      -webkit-linear-gradient(top,
+      rgba(255, 255, 255, .25),
+      rgba(0, 0, 0, .25)),
+      -webkit-linear-gradient(left, rgb(204, 184, 0), rgb(84, 255, 68));
 
-        border-radius: 2px;
-        background-size: 35px 20px,
-        100% 100%,
-        100% 100%;
-    }
+      border-radius: 2px;
+      background-size: 35px 20px,
+      100% 100%,
+      100% 100%;
+  }
 </style>

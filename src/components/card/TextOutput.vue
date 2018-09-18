@@ -100,7 +100,7 @@
         margin-bottom: 5px;
         padding-bottom: 1px;
         width: 100%;
-        background: rgba(204, 204, 204, 0.99);
+        background: #65CCB8;
     }
 
     select {
