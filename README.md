@@ -27,7 +27,7 @@ npm run start
 ```
 # Images
 
-![alt text](images/FrontCard.png)
-![alt text](images/InsideLeft.png)
-![alt text](images/InsideRight.png)
-![alt text](images/backCard.png)
+![alt text](images-preview/FrontCard.png)
+![alt text](images-preview/InsideLeft.png)
+![alt text](images-preview/InsideRight.png)
+![alt text](images-preview/backCard.png)
