@@ -10,19 +10,21 @@
               <p><em>&larr; Make changes in the edit card area below</em></p>
             </div>
             <div class="col-sm-6">
-              <p><em>And they will show on the card! &larr;</em></p>
+              <p><em>And they will show on the card! &#x21B4;</em></p>
             </div>
           </div>
         </div>
-        <transition appear
-                    appear-active-class="custom-appaer-active-class"
-                    name="fade" 
-                    mode="out-in"
-                    @enter="enter">
-          <keep-alive>
-            <component v-bind:is="currentPage"></component>
-          </keep-alive>
-        </transition>
+            <transition appear
+                        appear-active-class="custom-appaer-active-class"
+                        name="fade" 
+                        mode="out-in"
+                        @enter="enter">
+              <keep-alive>
+                <div class="cardCC">
+                <component v-bind:is="currentPage"></component>
+                </div>
+              </keep-alive>
+            </transition>
 
         <cc-footer>
           <p class="text-center" slot="app-name">&copy; {{ appName }}</p>
@@ -74,7 +76,45 @@ export default {
 <style>
   body {
     font-family: 'Passion One', cursive;
-    color: #333;
+    color: white;
+    background-image: url('https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b2b3eeca79a80926667ec71b01eac12&auto=format&fit=crop&w=1950&q=80');
+    width: 100%;
+    height: auto;
+  }
+
+  .cardCC {
+    padding: 10px 0px;
+    position: relative;
+  }
+
+  .cardCC:before, .cardCC:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 25px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 5000px;
+    background: #777;
+    -webkit-box-shadow: 0 35px 20px #777;
+    -moz-box-shadow: 0 35px 20px #777;
+    box-shadow: 0 35px 20px #777;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+  }
+
+  .cardCC:after {
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    -o-transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+    transform: rotate(8deg);
+    right: 10px;
+    left: auto;
   }
 
   a {
