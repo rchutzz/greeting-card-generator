@@ -13,6 +13,7 @@
   "dependencies": {
     "express": "^4.16.3",
     "firebase": "^5.4.2",
+    "nodemon": "^1.18.4",
     "vue": "^2.5.11"
   },
   "browserslist": [
