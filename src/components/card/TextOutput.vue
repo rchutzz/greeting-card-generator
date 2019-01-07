@@ -107,3 +107,5 @@
         height: 40%;
     }
 </style>
+
+// TextOutput will display the text from TextInput on the current card view
