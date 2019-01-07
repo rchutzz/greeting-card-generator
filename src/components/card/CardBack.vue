@@ -41,3 +41,5 @@
 <style>
 
 </style>
+
+// Component for rendering the back of the App with ImageUpload & SectionCompleted on the left and ImageOutput on the right
