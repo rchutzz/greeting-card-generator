@@ -24,3 +24,4 @@
     }
 </script>
 
+// TextInput allows the user to add text into the Sections
