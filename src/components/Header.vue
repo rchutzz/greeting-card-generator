@@ -40,3 +40,5 @@
         margin: 0px 5px;
     }
 </style>
+
+// Header component that lets users choose which part of the card to render alongside the progress bar
