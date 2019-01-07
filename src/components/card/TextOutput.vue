@@ -92,7 +92,6 @@
     .italic {
         font-style: italic;
     }
-
     form {
         /* position: absolute; */
         border-bottom: 1px dotted grey;
@@ -102,7 +101,6 @@
         width: 100%;
         background: #65CCB8;
     }
-
     select {
         height: 40%;
     }
