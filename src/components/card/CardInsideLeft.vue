@@ -30,7 +30,6 @@
 </script>
 
 <style>
-
 </style>
 
 // CardInsideLeft component for rendering TextInput with SectionCompleted with SectionOutput components
