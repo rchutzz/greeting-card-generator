@@ -12,3 +12,5 @@
 <style>
 
 </style>
+
+// Footer component just to display the app name
