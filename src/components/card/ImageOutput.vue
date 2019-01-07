@@ -85,3 +85,5 @@ function setDraggable() {
     100% { transform: scale(0); }
   }
 </style>
+
+// Component responsible for displaying image from FireBase
