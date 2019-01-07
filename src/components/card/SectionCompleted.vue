@@ -24,3 +24,5 @@
         }
     }
 </script>
+
+// Checks the progress on if the current card view is checked or not to return to the App component
