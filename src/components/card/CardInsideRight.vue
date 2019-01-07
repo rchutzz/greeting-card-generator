@@ -37,3 +37,5 @@
 
 <style>
 </style>
+
+// Component responsible for showing the multiple text outputs and image outputs
