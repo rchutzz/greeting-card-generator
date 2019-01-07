@@ -45,3 +45,5 @@
         100% 100%;
     }
 </style>
+
+// Component responsible for grabbing completed sections and rendering the number of total complete card views
