@@ -88,3 +88,5 @@
       100% 100%;
   }
 </style>
+
+// Component lets you choose the file to upload to Firebase and then shows you the progress of upload before shooting it over to the ImageOutput
